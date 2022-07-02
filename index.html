@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\Мои практические\CSS\landing_page.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<!--Привет, заранее спасибо за вашу проверку и хорошего дня :) -->
+
+<body>
+<header class="header"> <!--заголовок с ссылками и логотипом-->
+<div><a class="logo" href="index.html">cofee house</a></div>
+<nav class="menu">
+<div><ul class="menu__ul">
+<li class="menu__li"><a class="menu__link" href="#home">HOME</a></li>
+<li class="menu__li"><a class="menu__link" href="#story">STORY</a></li>
+<li class="menu__li"><a class="menu__link" href="#blog">BLOG</a></li>
+<li class="menu__li"><a class="menu__link" href="#subscribe">SUBSCRIBE</a></li>
+</ul></div>
+</nav>
+</header>
+<div class="home" id="home"> <!--верхний блок с картинкой и надписью в центре-->
+    <div class="home__text">take your time</div>
+    <div class="line"></div>
+</div>
+
+<div class="story" id="story"> <!--центральный блок с картинкой и текстом-->
+    <div class="story__title">story</div>
+    <div class="story__content"> 
+        <div class="story__image"><img src="https://source.unsplash.com/X4RJG4aNi8o/1920x1080"  width="600" height="400" alt="story__image"></div>
+        <div class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra risus.</div>
+    </div>
+<main>
+<div class="blog" id="blog"> <!--нижний блок с надписью и блоком карточек-->
+    <div class="blog__title">blog</div> 
+    <div class="card__box"> <!--блок с карточками-->
+        <div class="card"> <!--у каждой карточки отдельный блок с одинаковой структурой-->
+            <div class="card__title"><a class="blog_link" href="#"> Daily Coffee News</a></div> <!--задаём универсальный класс элемента-->
+            <div class="card__image"><img src="https://source.unsplash.com/TYIzeCiZ_60/1920x1080"  width="325" height="216" alt="card1__image"></div>
+            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</div>
+        </div>
+        <div class="card"> <!--у каждой карточки отдельный блок с одинаковой структурой-->
+            <div class="card__title"><a class="blog_link" href="#">Dutch Coffee Chains</a></div> <!--задаём универсальный класс элемента-->
+            <div class="card__image"><img src="https://source.unsplash.com/CSQQ6_T0sks/1920x1080"  width="325" height="216" alt="card2__image"></div>
+            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</div>
+        </div>
+        <div class="card"> <!--у каждой карточки отдельный блок с одинаковой структурой-->
+            <div class="card__title"><a class="blog_link" href="#">Start Up In Minneapolis</a></div> <!--задаём универсальный класс элемента-->
+            <div class="card__image"><img src="https://source.unsplash.com/9rTEwV_G0Do/1920x1080"  width="325" height="216" alt="card3__image"></div>
+            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</div>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+
+<footer>
+    <div class="contact"> <!--нижний блок формой ввода email и кнопкой submit-->
+        <div class="subscribe" id="subscribe">subscribe</div>   <!--надпись-->
+
+            <div class="form"><form> <!--связываем форму ввода и кнопку вместе-->
+                <div class="email"><input id="email_inp" type="email" name="email" placeholder="enter your email"></div>   <!--форма ввода с типом email-->
+                <div class="submit"><button class="submit_btn" type="submit">submit</button></div></form><!--кнопка с типом submit-->
+            </div>
+    </div> <!--очень много контейнеров получилось, старался уменьшить их количество, но это минимум который у меня получился-->
+
+    <div class="copyright">© COPYRIGHT 2021</div>
+</footer>
+</body>
+</html>
